@@ -1,81 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Sporta</title>
+  <title>Sporta</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
+  <!-- Custom styles for this page -->
+  <style>
+  body {
+    padding-top: 54px;
+  }
+  @media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  }
 
-      td {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
+  td {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-      table {
-        text-align: center;
-        width: 100%;
-      }
+  table {
+    text-align: center;
+    width: 100%;
+  }
 
-      .row {
-        padding-top: 20px;
-      }
+  .row {
+    padding-top: 20px;
+  }
 
-      .title {
-        padding-bottom: 25px;
-      }
+  .title {
+    padding-bottom: 25px;
+  }
 
-    </style>
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: center;
 
-  </head>
+  }
 
-  <body>
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Sporta</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="scoreboard.html">Scoreboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Team Statistics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="player.html">Player Statistics</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  tr:nth-child(odd){background-color: #98AFC7}
+  </style>
+</head>
 
-    <!-- Page Content -->
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="title">Welcome</h2>
+      <a class="navbar-brand" href="index.html">Sporta</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Teams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="title">Game Schedule</h2>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div style="overflow-x:auto;">
+              <table>
+                <tr>
+                  <th>Date</th>
+                  <th>Home</th>
+                  <th>Away</th>
+                  <th>Score</th>
+                  <th>Venue</th>
+                </tr>
+                <tr>
+                  <td>Thu Apr 26, 2018</td>
+                  <td><a href="team_page.html">Team A</a></td>
+                  <td><a href="team_page.html">Team B</a></td>
+                  <td><a href="details.html">5-3</a></td>
+                  <td><a href="venue.html">Venue</a></td>
+                </tr>
+                <tr>
+                  <td>Wed Apr 25, 2018</td>
+                  <td><a href="team_page.html">Team C</a></td>
+                  <td><a href="team_page.html">Team D</a></td>
+                  <td><a href="details.html">5-4</a></td>
+                  <td><a href="venue.html">Venue</a></td>
+                </tr>
+                <tr>
+                  <td>Tue Apr 24, 2018</td>
+                  <td><a href="team_page.html">Team E</a></td>
+                  <td><a href="team_page.html">Team F</a></td>
+                  <td><a href="details.html">1-3</a></td>
+                  <td><a href="venue.html">Venue</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -86,4 +138,4 @@
 
   </body>
 
-</html>
+  </html>
